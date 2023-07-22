@@ -27,7 +27,7 @@
 
         .my-button {
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #1e3799; /* Dark blue background color */
             color: white;
             border: none;
             border-radius: 5px;
@@ -36,8 +36,16 @@
             text-decoration: none;
         }
 
+        .my-button.red {
+            background-color: #c0392b; /* Red background color */
+        }
+
         .my-button:hover {
-            background-color: #45a049;
+            background-color: #154c7a; /* Darker blue on hover */
+        }
+
+        .my-button.red:hover {
+            background-color: #a61f17; /* Darker red on hover */
         }
     </style>
 </head>
@@ -45,8 +53,8 @@
     <h1>Welcome to My Website</h1>
     <p>This is my first website, and I'm still learning.</p>
     <div class="button-container">
-        <a class="my-button" href="https://youtube.com/@moony890?si=dcJMzDSHBHMnQ5T2" target="_blank">Visit YouTube Channel</a>
-        <a class="my-button" href="https://discord.gg/jcMrykqp" target="_blank">Join Discord Server</a>
+        <a class="my-button" href="https://www.youtube.com/channel/YOUR_YOUTUBE_CHANNEL_ID" target="_blank">Visit YouTube Channel</a>
+        <a class="my-button red" href="https://discord.gg/YOUR_DISCORD_SERVER_INVITE" target="_blank">Join Discord Server</a>
     </div>
 </body>
 </html>
