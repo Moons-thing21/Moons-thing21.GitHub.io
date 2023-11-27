@@ -1,115 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>moons funni website</title>
-    <meta name="description" content="This is my first website, and I'm still learning. Dont be mean please if its trash. Give me feedback">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1; /* Light gray background color for the entire webpage */
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        p {
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .my-button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-        }
-
-        .my-button.red {
-            background-color: #c0392b;
-        }
-
-        .my-button:hover {
-            background-color: #0056b3;
-        }
-
-        .my-button.red:hover {
-            background-color: #a61f17;
-        }
-
-        .login-container {
-            margin-top: 40px;
-        }
-
-        .login-input {
-            padding: 8px;
-            margin: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .login-button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .login-error {
-            color: red;
-            display: none;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simplest Portfolio Design | AsmrProg</title>
 </head>
+
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my first website, and I'm still learning. Don't be mean please if it's trash. Give me feedback.</p>
-    <p>Space is a fascinating and mysterious place. It is the vast expanse that holds the celestial bodies, stars, planets, galaxies, and much more. The wonders of space never fail to captivate our imaginations and spark our curiosity. From the breathtaking beauty of distant nebulae to the mind-boggling scale of the universe, space never ceases to amaze. Space exploration has brought us remarkable discoveries and insights into the cosmos, and the quest for knowledge continues. As we look up at the night sky, we are reminded of our place in the universe and the vastness of possibilities that lie beyond our home planet.</p>
-    <div class="button-container">
-        <a class="my-button" href="my_channels.html">My YouTube Channel</a>
-        <a class="my-button red" href="https://discord.gg/jcMrykqp" target="_blank">Join Discord Server</a>
-    </div>
-    <div class="button-container">
-        <a class="my-button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Do Not Click</a>
-        <a class="my-button red" href="more.html">More...</a>
+
+    <div class="container">
+        <div class="glass-container">
+            <nav class="navbar">
+                <div class="logo"><a href="#">AsmrProg</a></div>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">Youtube</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="main">
+                    <h2>Hey! 👋,<br>It's AsmrProg</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Soluta ducimus dicta nisi quisquam rerum
+                    </p>
+                    <button>Get Started</button>
+                </div>
+                <div class="image-wrapper">
+                    <img src="image.png">
+                    <div class="attrebute">
+                        <a
+                            href="https://www.freepik.com/free-psd/marketing-concept-with-woman-rocketship_33417710.htm#page=2&query=3d%20illustration&position=32&from_view=search&track=ais">Image
+                            by Freepik</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="login-container">
-        <h2>Login to Access Special Content</h2>
-        <form id="login-form">
-            <input class="login-input" type="text" id="username" placeholder="Username" required>
-            <input class="login-input" type="password" id="password" placeholder="Password" required>
-            <button class="login-button" type="submit">Login</button>
-        </form>
-        <p class="login-error">Invalid username or password.</p>
-    </div>
-
-    <script>
-        document.getElementById("login-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            if (username === "github" && password === "younosyperson") {
-                window.location.href = "empty.html";
-            } else {
-                document.querySelector(".login-error").style.display = "block";
-            }
-        });
-    </script>
 </body>
+
 </html>
